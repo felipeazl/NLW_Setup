@@ -1,9 +1,14 @@
-import './styles/global.css'
+import "./styles/global.css";
+import { Header } from "./components/Header";
+import { SummaryTable } from "./components/SummaryTable";
 
-function App() {
+export function App() {
   return (
-    <div className='bg-violet-500 w-10 h-10 text-white rounded'>Hello World</div>
-  )
+    <div className="w-screen h-screen flex justify-center items-center">
+      <div className="w-full max-w-5xl px-6 flex flex-col gap-16">
+        <Header />
+        <SummaryTable />
+      </div>
+    </div>
+  );
 }
-
-export default App
